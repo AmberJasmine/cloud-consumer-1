@@ -7,6 +7,19 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+#    openfeign:
+#      client:
+#        config:
+#          default:
+#            #连接超时时间
+#            connectTimeout: 30000
+#            #读取超时时间
+#            readTimeout: 30000
+#    feign:
+#      httpclient:
+#        enabled: true # 开启feign对HttpClient的支持
+#        max-connections: 200 # 最大的连接数
+#        max-connections-per-route: 50 # 每个路径的最大连接数
     gateway:
       routes:
         - id: provider-user # 路由规则id，自定义，唯一
