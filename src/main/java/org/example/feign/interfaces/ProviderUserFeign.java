@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(value = "provider-user")
 public interface ProviderUserFeign {
 
-    @GetMapping("/hello/{name}")
+    @GetMapping("/user/hello/{name}")
     String hi(@PathVariable(name = "name") String name);
 
 }

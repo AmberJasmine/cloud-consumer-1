@@ -30,9 +30,9 @@ spring:
 eureka:
   client:
     serviceUrl:
+#      defaultZone: http://user:password123@127.0.0.1:8761/eureka
 #      defaultZone: http://user:password123@121.5.179.95:8761/eureka
       defaultZone: http://user:password123@123.249.43.78:8761/eureka
-#      defaultZone: http://user:password123@127.0.0.1:8761/eureka
 
 zuul:
   routes:
